@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inter-MGM Fest 2025 | Live Scores & Events</title>
+  <style>
+    /* BASIC & RESET */
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family:'Poppins', sans-serif; background:#f8faff; color:#222; line-height:1.6; }
+    html { scroll-behavior:smooth; }
+    .container { width:90%; max-width:1200px; margin:auto; }
+    a { text-decoration:none; color:inherit; }
+
+    /* HEADER */
+    header { background:#002f6c; color:#fff; padding:1rem 0; position:sticky; top:0; z-index:999; }
+    nav { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; }
+    nav h1 { font-size:1.8rem; font-weight:700; }
+    nav ul { display:flex; list-style:none; gap:20px; }
+    nav a { color:#fff; font-weight:500; transition:.3s; }
+    nav a:hover { color:#ffd700; }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(rgba(0,0,50,.6), rgba(0,0,50,.6)),
+                  url('https://mgmesrourkela.in/wp-content/uploads/2022/09/WhatsApp-Image-2022-07-25-at-11.40.59-AM.jpeg')
+                  center/cover no-repeat;
+      color:#fff; text-align:center; padding:120px 20px;
+    }
+    .hero h2 { font-size:3rem; margin-bottom:10px; }
+    .hero p  { font-size:1.2rem; margin-bottom:20px; }
+    .hero a  { background:#ffd700; color:#003366; padding:12px 25px; border-radius:6px; font-weight:600; transition:.3s; }
+    .hero a:hover { background:#fff; }
+
+    /* SECTION STYLES */
+    section { padding:80px 20px; }
+    section h2 { text-align:center; font-size:2.5rem; color:#003366; margin-bottom:30px; }
+
+    /* TABS & SCOREBOARD */
+    .tabs { display:flex; flex-wrap:wrap; justify-content:center; gap:10px; margin-bottom:30px; }
+    .tab-btn { background:#eef3ff; color:#003366; padding:10px 20px; border:none; border-radius:5px; font-weight:600; cursor:pointer; transition:.3s; }
+    .tab-btn.active, .tab-btn:hover { background:#003366; color:#fff; }
+    .tab-content { display:none; animation:fadeIn .4s ease-in-out; }
+    .tab-content.active { display:block; }
+    @keyframes fadeIn { from{ opacity:0; } to{ opacity:1; } }
+
+    .scoreboard { display:grid; grid-template-columns:repeat(auto-fit, minmax(300px,1fr)); gap:20px; max-width:1000px; margin:auto; }
+    .match-card { background:#f1f6ff; border-radius:10px; padding:20px; box-shadow:0 2px 8px rgba(0,0,0,0.1); text-align:center; transition:.3s; }
+    .match-card:hover { transform:translateY(-5px); }
+    .teams { font-weight:600; color:#003366; margin-bottom:10px; }
+    .score { font-size:1.8rem; color:#0077cc; font-weight:bold; margin-10px 0; }
+    .status { font-size:.9rem; color:#555; }
+
+    /* ABOUT */
+    #about { background:#f8fbff; text-align:center; }
+    #about p { max-width:800px; margin:auto; font-size:1.1rem; margin-bottom:20px; }
+    .about-details p { margin:5px 0; font-size:1rem; }
+    .about-details strong { color:#003366; }
+
+    /* GALLERY */
+    #gallery { background:#fff; }
+    .gallery-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(250px,1fr)); gap:15px; width:90%; max-width:1000px; margin:auto; padding-bottom:40px; }
+    .gallery-grid img { width:100%; height:220px; object-fit:cover; border-radius:10px; transition:.3s; }
+    .gallery-grid img:hover { transform:scale(1.05); }
+
+    /* CONTACT */
+    #contact { background:#f8fbff; text-align:center; }
+    form { max-width:600px; margin:auto; display:flex; flex-direction:column; gap:15px; }
+    input, textarea { padding:12px; border:1px solid #ccc; border-radius:5px; font-size:1rem; }
+    button { background:#003366; color:#fff; padding:12px; border:none; border-radius:5px; cursor:pointer; font-size:1rem; }
+    button:hover { background:#0055aa; }
+
+    /* FOOTER */
+    footer { background:#003366; color:#ddd; text-align:center; padding:20px; font-size:.9rem; }
+
+    /* RESPONSIVE */
+    @media(max-width:768px) {
+      nav ul { flex-direction:column; gap:10px; }
+      .hero h2 { font-size:2.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <h1>Inter-MGM Fest 2025</h1>
+      <ul>
+        <li><a href="#scores">Live Scores</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <h2>Welcome to Inter-MGM Fest 2025</h2>
+  <p>Experience the thrill of sports and the joy of culture — live updates, right here!</p>
+  <a href="#scores">View Live Scores</a>
+</section>
+
+<section id="scores">
+  <h2>🏆 Live Scoreboard</h2>
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="sports">Sports</button>
+    <button class="tab-btn" data-tab="athletics">Athletics</button>
+    <button class="tab-btn" data-tab="cultural">Cultural</button>
+  </div>
+
+  <!-- SPORTS-->
+  <div id="sports" class="tab-content active">
+    <div class="scoreboard">
+      <div class="match-card"><div class="teams">Kho-Kho : CS vs ECE</div><div class="score" id="s1">0 - 0</div><div class="status" id="s1s">Upcoming</div></div>
+      <div class="match-card"><div class="teams">Basketball : IT vs Mech</div><div class="score" id="s2">0 - 0</div><div class="status" id="s2s">Upcoming</div></div>
+      <div class="match-card"><div class="teams">Volleyball : Civil vs EEE</div><div class="score" id="s3">0 - 0</div><div class="status" id="s3s">Upcoming</div></div>
+      <div class="match-card"><div class="teams">Kabaddi : Mech vs Civil</div><div class="score" id="s4">0 - 0</div><div class="status" id="s4s">Upcoming</div></div>
+    </div>
+  </div>
+
+  <!-- ATHLETICS -->
+  <div id="athletics" class="tab-content">
+    <div class="scoreboard">
+      <div class="match-card"><div class="teams">100 Metres</div><div class="score" id="a1">--</div><div class="status" id="a1s">Not Started</div></div>
+      <div class="match-card"><div class="teams">200 Metres</div><div class="score" id="a2">--</div><div class="status" id="a2s">Not Started</div></div>
+      <div class="match-card"><div class="teams">400 Metres</div><div class="score" id="a3">--</div><div class="status" id="a3s">Not Started</div></div>
+      <div class="match-card"><div class="teams">800 Metres</div><div class="score" id="a4">--</div><div class="status" id="a4s">Not Started</div></div>
+      <div class="match-card"><div class="teams">1500 Metres</div><div class="score" id="a5">--</div><div class="status" id="a5s">Not Started</div></div>
+      <div class="match-card"><div class="teams">Long Jump</div><div class="score" id="a6">--</div><div class="status" id="a6s">Not Started</div></div>
+      <div class="match-card"><div class="teams">High Jump</div><div class="score" id="a7">--</div><div class="status" id="a7s">Not Started</div></div>
+      <div class="match-card"><div class="teams">Shot Put</div><div class="score" id="a8">--</div><div class="status" id="a8s">Not Started</div></div>
+      <div class="match-card"><div class="teams">Discus Throw</div><div class="score" id="a9">--</div><div class="status" id="a9s">Not Started</div></div>
+      <div class="match-card"><div class="teams">Javelin Throw</div><div class="score" id="a10">--</div><div class="status" id="a10s">Not Started</div></div>
+      <div class="match-card"><div class="teams">4 × 400 Metres Relay</div><div class="score" id="a11">--</div><div class="status" id="a11s">Not Started</div></div>
+    </div>
+  </div>
+
+  <!-- CULTURAL -->
+  <div id="cultural" class="tab-content">
+    <div class="scoreboard">
+      <div class="match-card"><div class="teams">Singing</div><div class="score" id="c1">--</div><div class="status" id="c1s">Ongoing</div></div>
+      <div class="match-card"><div class="teams">Dancing</div><div class="score" id="c2">--</div><div class="status" id="c2s">Upcoming</div></div>
+      <div class="match-card"><div class="teams">Drama</div><div class="score" id="c3">--</div><div class="status" id="c3s">Upcoming</div></div>
+      <div class="match-card"><div class="teams">Debate</div><div class="score" id="c4">--</div><div class="status" id="c4s">Upcoming</div></div>
+      <div class="match-card"><div class="teams">Poetry</div><div class="score" id="c5">--</div><div class="status" id="c5s">Upcoming</div></div>
+      <div class="match-card"><div class="teams">Essay Writing</div><div class="score" id="c6">--</div><div class="status" id="c6s">Upcoming</div></div>
+      <div class="match-card"><div class="teams">Drawing</div><div class="score" id="c7">--</div><div class="status" id the="c7s">Upcoming</div></div>
+      <div class="match-card"><div.class="teams">Painting</div><div class="score" id="c8">--</div><div class="status" id="c8s">Upcoming</div></div>
+      <div class="match-card"><div.class="teams">Rangoli</div><div class="score" id="c9">--</div><div class="status" id="c9s">Upcoming</div></div>
+    </div>
+  </div>
+
+</section>
+
+<section id="about">
+  <h2>About the Fest & Host School</h2>
+  <p>The Inter-MGM Fest 2025 brings together students across departments to celebrate sportsmanship, cultural talent and athletics excellence under one roof.</p>
+  <div class="about-details">
+    <p><strong>📍 Location:</strong> Jagda, Rourkela-42, Odisha, India 769042 (Coordinates approx 22.2583° N, 84.8986° E) :contentReference[oaicite:5]{index=5}</p>
+    <p><strong>🏫 Host School:</strong> MGM English Medium School, Rourkela (Mar Gregorios Memorial English School) – run by St. Thomas Malankara Orthodox Syrian Church Mission, Bhilai & owned by Malankara Orthodox Syrian Church, Kottayam. :contentReference[oaicite:8]{index=8}</p>
+    <p><strong>🎓 School Info:</strong> Established 1966, Co-Ed (Pre-Nursery to XII), Affiliated to ICSE/ISC. :contentReference[oaicite:9]{index=9}</p>
+  </div>
+</section>
+
+<section id="gallery">
+  <h2>📸 Event & Campus Gallery</h2>
+  <div class="gallery-grid">
+    <img src="https://mgmesrourkela.in/wp-content/uploads/2022/09/Cl-12-btch-21-22.jpeg" alt="Outgoing Batch 2021-22">
+    <img src="https://mgmesrourkela.in/wp-content/uploads/2022/09/WhatsApp-Image-2022-07-25-at-11.36.34-AM-1.jpeg" alt="Investiture Ceremony">
+    <img src="https://mgmesrourkela.in/wp-content/uploads/2022/09/WhatsApp-Image-2022-07-25-at-11.40.59-AM.jpeg" alt="Basketball Tournament">
+    <img src="https://mgmesrourkela.in/wp-content/uploads/2022/09/WhatsApp-Image-2022-06-29-at-1.45.46-PM.jpeg" alt="Indoor Sports Arena Inauguration">
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact the Organizing Team</h2>
+  <form onsubmit="alert('Message sent successfully!');return false;">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  © 2025 Inter-MGM Fest | Hosted by MGM English Medium School (Mar Gregorios Memorial English School), Jagda, Rourkela-42, Odisha | Run by St. Thomas Malankara Orthodox Syrian Church Mission, Bhilai | Owned by Malankara Orthodox Syrian Church, Kottayam
+</footer>
+
+<script>
+  /* Tab switching logic */
+  const tabs = document.querySelectorAll('.tab-btn');
+  const contents = document.querySelectorAll('.tab-content');
+  tabs.forEach(btn => {
+    btn.addEventListener('click', () => {
+      tabs.forEach(b => b.classList.remove('active'));
+      contents.forEach(c => c.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById(btn.dataset.tab).classList.add('active');
+    });
+  });
+
+  /* Live-score simulation logic */
+  function rand(n) { return Math.floor(Math.random()*n); }
+  function updateScores() {
+    ['s1','s2','s3','s4'].forEach(id => {
+      document.getElementById(id).textContent = `${rand(30)} - ${rand(30)}`;
+      document.getElementById(id+'s').textContent = "Live • "+new Date().toLocaleTimeString();
+    });
+    for(let i=1;i<=11;i++){
+      document.getElementById('a'+i).textContent = `Winner: Dept ${['CS','ECE','Mech','Civil','IT'][rand(5)]}`;
+      document.getElementById('a'+i+'s').textContent = "Updated • "+new Date().toLocaleTimeString();
+    }
+    for(let i=1;i<=9;i++){
+      document.getElementById('c'+i).textContent = `Score: ${rand(100)}`;
+      document.getElementById('c'+i+'s').textContent = "Judging • "+new Date().toLocaleTimeString();
+    }
+  }
+  setInterval(updateScores, 5000);
+  updateScores();
+</script>
+
+</body>
+</html>
