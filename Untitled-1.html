@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MGM Fest 2025-26</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f9f9f9;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(to right, #003366, #0055a5);
+            color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #004080;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: #fff;
+            padding: 15px 20px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #003366;
+            border-radius: 5px;
+        }
+
+        /* Sections */
+        section {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        section h2 {
+            color: #003366;
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 2em;
+        }
+
+        /* Grid Layout */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+        }
+
+        .card h3 {
+            color: #0055a5;
+            margin-bottom: 15px;
+        }
+
+        .card ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        /* Event Details */
+        .details p {
+            margin: 10px 0;
+            font-weight: 500;
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(to right, #003366, #0055a5);
+            color: #fff;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        /* Responsive Text */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            nav a {
+                padding: 10px;
+                font-size: 0.9em;
+            }
+
+            section {
+                padding: 30px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>MGM Fest 2025-26</h1>
+        <p>Celebrating Sports & Culture Across Schools</p>
+    </header>
+
+    <nav>
+        <a href="#schools">Schools</a>
+        <a href="#sports">Sports</a>
+        <a href="#cultural">Cultural</a>
+        <a href="#details">Event Details</a>
+    </nav>
+
+    <section id="schools">
+        <h2>Participating Schools</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Mar Gregorious Memorial Senior Secondary School</h3>
+                <p>Bhilai, Chhattisgarh</p>
+            </div>
+            <div class="card">
+                <h3>M.G.M Higher Secondary School</h3>
+                <p>CBSE, Bokaro Steel City, Jharkhand</p>
+            </div>
+            <div class="card">
+                <h3>M.G.M English School</h3>
+                <p>Rourkela, Odisha</p>
+            </div>
+            <div class="card">
+                <h3>M.G.M. CO-ED.HR.SEC. SCHOOL</h3>
+                <p>Amrawadkhurd, B.D.A Road, Berkhera, Bhopal</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="sports">
+        <h2>Sports Events</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Team Sports</h3>
+                <ul>
+                    <li>Kho Kho</li>
+                    <li>Basketball</li>
+                    <li>Volleyball</li>
+                    <li>Kabaddi</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Athletics</h3>
+                <ul>
+                    <li>100 meter, 200 meter, 400 meter, 800 meter, 1500 meter</li>
+                    <li>Long jump, High jump</li>
+                    <li>Shot put, Discus throw, Javelin throw</li>
+                    <li>4 × 400 meter relay</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="cultural">
+        <h2>Cultural Events</h2>
+        <div class="grid">
+            <div class="card">
+                <ul>
+                    <li>Singing</li>
+                    <li>Dance</li>
+                    <li>Drama</li>
+                    <li>Debate</li>
+                    <li>Poetry</li>
+                    <li>Essay Writing</li>
+                    <li>Drawing</li>
+                    <li>Painting</li>
+                    <li>Rangoli</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="details">
+        <h2>Event Details</h2>
+        <div class="card details">
+            <p><strong>Date:</strong> 9-10 November 2025</p>
+            <p><strong>Host:</strong> MGM English Medium School (Mar Gregorious Memorial English School), Jagda, Rourkela-42, Odisha</p>
+            <p><strong>Run By:</strong> St. Thomas Malankara Orthodox Syrian Church Mission, Bhilai</p>
+            <p><strong>Owned By:</strong> Malankara Orthodox Syrian Church, Kottayam</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 MGM Fest. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
